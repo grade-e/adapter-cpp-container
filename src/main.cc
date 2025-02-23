@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    std::shared_ptr<IPrinter> modernPrinter = std::make_shared<ModernPrinter>();
+    shared_ptr<IPrinter> modernPrinter = make_shared<ModernPrinter>();
     modernPrinter->printDocument("Hello from Modern Printer!");
 
     shared_ptr<OldPrinter> oldPrinter = make_shared<OldPrinter>();
